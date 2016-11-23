@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.io.PipedOutputStream;
 import java.util.concurrent.CountDownLatch;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 
 public class Capture implements Runnable {
@@ -31,6 +31,7 @@ public class Capture implements Runnable {
     public static final int SAMPLE_SIZE = 16;
     public static final int BUFFER_SIZE = SAMPLE_SIZE * 20;
     
+	private boolean muteOn;
     private PipedOutputStream rawData;
     private boolean isStopped;
     private SoundSource soundSource;
@@ -55,8 +56,10 @@ public class Capture implements Runnable {
                 if (buffer == null) {
                     break;
                 }
+				if (!muteOn) {
                 rawData.write(buffer);
                 rawData.flush();
+				}
             } catch (IOException e) {
                 logger.error("input/output error", e);
                 return;
@@ -75,5 +78,10 @@ public class Capture implements Runnable {
     public synchronized void setStopped(boolean isStopped) {
         this.isStopped = isStopped;
     }
+
+	public void mute(boolean muteOn) {
+		this.muteOn = muteOn;
+
+	}
 
 }

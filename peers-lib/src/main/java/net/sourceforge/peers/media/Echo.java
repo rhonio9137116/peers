@@ -26,7 +26,7 @@ import java.net.InetAddress;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 public class Echo implements Runnable {
 

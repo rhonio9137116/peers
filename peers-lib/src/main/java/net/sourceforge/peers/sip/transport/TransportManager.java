@@ -44,7 +44,7 @@ import java.security.PrivilegedAction;
 import java.util.Hashtable;
 
 import net.sourceforge.peers.Config;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 import net.sourceforge.peers.sip.Utils;
 import net.sourceforge.peers.sip.syntaxencoding.SipHeaderFieldName;

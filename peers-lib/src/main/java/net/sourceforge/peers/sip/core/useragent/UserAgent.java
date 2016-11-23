@@ -24,9 +24,11 @@ import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+
 import net.sourceforge.peers.Config;
 import net.sourceforge.peers.FileLogger;
-import net.sourceforge.peers.Logger;
+
 import net.sourceforge.peers.XmlConfig;
 import net.sourceforge.peers.media.AbstractSoundManager;
 import net.sourceforge.peers.media.Echo;

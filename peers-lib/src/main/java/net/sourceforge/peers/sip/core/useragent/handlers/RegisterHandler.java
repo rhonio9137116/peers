@@ -26,7 +26,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import net.sourceforge.peers.Config;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 import net.sourceforge.peers.sip.core.useragent.InitialRequestManager;
 import net.sourceforge.peers.sip.core.useragent.RequestManager;

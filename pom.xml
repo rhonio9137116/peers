@@ -5,10 +5,11 @@
 
 	<groupId>net.sourceforge.peers</groupId>
 	<artifactId>peers</artifactId>
-	<version>1.0.0</version>
+	<version>${peers.version}</version>
 	<packaging>pom</packaging>
 
 	<properties>
+		<peers.version>1.0.1</peers.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -21,7 +22,7 @@
 		<module>peers-jws</module>
 		<module>peers-lib</module>
 	</modules>
-
+	
 	<build>
 		<plugins>
 			<plugin>

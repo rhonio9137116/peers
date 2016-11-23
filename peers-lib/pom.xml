@@ -4,19 +4,12 @@
 	<parent>
 		<groupId>net.sourceforge.peers</groupId>
 		<artifactId>peers</artifactId>
-		<version>1.0.0</version>
+		<version>${peers.version}</version>		
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-
-	
 	<artifactId>peers-lib</artifactId>
-
 	<packaging>jar</packaging>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -24,6 +17,22 @@
 			<artifactId>testng</artifactId>
 			<version>6.1.1</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.13</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
 

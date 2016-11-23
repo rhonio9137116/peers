@@ -1,0 +1,10 @@
+<version date="2016/11/23" versionNumber="1.0.1"/>
+1. Change the Logger interface to SLF4J.
+2. Add mute function.
+3. Add Project Inheritance to Maven configuration. 
+
+---------------------------------------------------------------------------------------------------------
+<version date="2016/11/22" versionNumber="1.0.0"/>
+1. Initial fork from ymartineau last committed on 21 Oct 2016 "DTMF end packets should not increase timestamp...".
+
+---------------------------------------------------------------------------------------------------------

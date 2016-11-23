@@ -3,14 +3,11 @@
 	<parent>
 		<groupId>net.sourceforge.peers</groupId>
 		<artifactId>peers</artifactId>
-		<version>1.0.0</version>
+		<version>${peers.version}</version>
 	</parent>
 
-	<modelVersion>4.0.0</modelVersion>
-
-	
+	<modelVersion>4.0.0</modelVersion>	
 	<artifactId>peers-doc</artifactId>
-
 	<packaging>jar</packaging>
 
 	<build>

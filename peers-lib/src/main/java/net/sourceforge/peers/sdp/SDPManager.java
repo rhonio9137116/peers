@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Random;
 
 import net.sourceforge.peers.Config;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.rtp.RFC3551;
 import net.sourceforge.peers.rtp.RFC4733;
 import net.sourceforge.peers.sip.core.useragent.UserAgent;

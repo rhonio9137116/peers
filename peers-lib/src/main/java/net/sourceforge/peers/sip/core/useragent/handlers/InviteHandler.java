@@ -31,7 +31,7 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Timer;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.media.MediaManager;
 import net.sourceforge.peers.sdp.Codec;
 import net.sourceforge.peers.sdp.MediaDestination;

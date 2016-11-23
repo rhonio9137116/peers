@@ -51,7 +51,7 @@ public class XmlConfig implements Config {
 
     public final static int RTP_DEFAULT_PORT = 8000;
 
-    private Logger logger;
+    private org.slf4j.Logger logger;
 
     private File file;
     private Document document;
@@ -89,7 +89,8 @@ public class XmlConfig implements Config {
     private InetAddress publicInetAddress;
 
     //private InetAddress
-    public XmlConfig(String fileName, Logger logger) {
+    public XmlConfig(String fileName, org.slf4j.Logger logger) {
+    	System.out.println("Configuration fileName:"+ fileName);
         file = new File(fileName);
         this.logger = logger;
         if (!file.exists()) {

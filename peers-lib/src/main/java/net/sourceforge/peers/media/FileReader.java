@@ -22,7 +22,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 // To create an audio file for peers, you can use audacity:
 //

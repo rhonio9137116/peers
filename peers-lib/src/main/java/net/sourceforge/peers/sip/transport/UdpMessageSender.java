@@ -28,7 +28,7 @@ import java.security.AccessController;
 import java.security.PrivilegedAction;
 
 import net.sourceforge.peers.Config;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 
 
@@ -55,7 +55,8 @@ public class UdpMessageSender extends MessageSender {
         StringBuffer direction = new StringBuffer();
         direction.append("SENT to ").append(inetAddress.getHostAddress());
         direction.append("/").append(port);
-        logger.traceNetwork(new String(buf), direction.toString());
+      
+        logger.trace("[Network]: "+ new String(buf) + " [Direction]:"+direction.toString());
     }
 
     @Override

@@ -24,7 +24,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.TimerTask;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 import net.sourceforge.peers.sip.core.useragent.UserAgent;
 import net.sourceforge.peers.sip.syntaxencoding.NameAddress;

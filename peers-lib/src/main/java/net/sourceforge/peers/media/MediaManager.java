@@ -25,7 +25,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.List;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.rtp.RtpPacket;
 import net.sourceforge.peers.rtp.RtpSession;
 import net.sourceforge.peers.sdp.Codec;
@@ -270,6 +270,16 @@ public class MediaManager {
             rtpSender.pushPackets(rtpPackets);
         }
     }
+    
+    public void mute(boolean muteOn) {
+    	
+    	if (captureRtpSender != null) {
+            
+    		captureRtpSender.mute(muteOn);
+        }
+    
+    	
+	}
 
     public void stopSession() {
         if (rtpSession != null) {

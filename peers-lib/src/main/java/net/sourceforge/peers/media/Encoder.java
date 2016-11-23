@@ -29,7 +29,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 
 public abstract class Encoder implements Runnable {

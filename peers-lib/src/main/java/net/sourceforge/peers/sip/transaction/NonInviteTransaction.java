@@ -20,8 +20,7 @@
 package net.sourceforge.peers.sip.transaction;
 
 import java.util.Timer;
-
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.transport.TransportManager;
 
 public abstract class NonInviteTransaction extends Transaction {

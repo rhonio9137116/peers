@@ -19,7 +19,7 @@
 
 package net.sourceforge.peers.sip.transactionuser;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 public class DialogStateTerminated extends DialogState {
 

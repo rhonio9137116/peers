@@ -19,7 +19,7 @@
 
 package net.sourceforge.peers.sip.transaction;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 
 public class NonInviteServerTransactionStateProceeding extends

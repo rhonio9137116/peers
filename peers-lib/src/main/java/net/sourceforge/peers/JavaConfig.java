@@ -162,4 +162,14 @@ public class JavaConfig implements Config {
         this.mediaFile = mediaFile;
     }
 
+	@Override
+	public String toString() {
+		return "JavaConfig [localInetAddress=" + localInetAddress + ", publicInetAddress=" + publicInetAddress
+				+ ", userPart=" + userPart + ", domain=" + domain + ", password=" + password + ", outboundProxy="
+				+ outboundProxy + ", sipPort=" + sipPort + ", mediaMode=" + mediaMode + ", mediaDebug=" + mediaDebug
+				+ ", mediaFile=" + mediaFile + ", rtpPort=" + rtpPort + ", authorizationUsername="
+				+ authorizationUsername + "]";
+	}
+
+    
 }

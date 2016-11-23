@@ -28,7 +28,7 @@ import java.security.AccessController;
 import java.security.PrivilegedAction;
 
 import net.sourceforge.peers.Config;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 import net.sourceforge.peers.sip.transaction.TransactionManager;
 

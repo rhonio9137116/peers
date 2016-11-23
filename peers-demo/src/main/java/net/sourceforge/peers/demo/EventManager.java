@@ -4,7 +4,7 @@ import java.net.SocketException;
 
 import net.sourceforge.peers.Config;
 import net.sourceforge.peers.FileLogger;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.javaxsound.JavaxSoundManager;
 import net.sourceforge.peers.sip.core.useragent.SipListener;
 import net.sourceforge.peers.sip.core.useragent.UserAgent;

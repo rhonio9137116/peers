@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.rtp.RtpPacket;
 import net.sourceforge.peers.rtp.RtpSession;
 import net.sourceforge.peers.sdp.Codec;
@@ -195,6 +195,10 @@ public class RtpSender implements Runnable {
 
     public synchronized void setStopped(boolean isStopped) {
         this.isStopped = isStopped;
+    }
+    
+    public synchronized boolean isStopped() {
+        return this.isStopped;
     }
 
     public void pushPackets(List<RtpPacket> rtpPackets) {

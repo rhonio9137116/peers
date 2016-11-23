@@ -27,7 +27,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
 
 import net.sourceforge.peers.Config;
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 import net.sourceforge.peers.sip.Utils;
 import net.sourceforge.peers.sip.syntaxencoding.SipHeaderFieldValue;
@@ -118,8 +118,9 @@ public abstract class MessageReceiver implements Runnable {
         StringBuffer direction = new StringBuffer();
         direction.append("RECEIVED from ").append(sourceIp.getHostAddress());
         direction.append("/").append(sourcePort);
-        logger.traceNetwork(new String(message),
-                direction.toString());
+             
+        logger.trace("[Network]: "+ new String(message) + " [Direction]:"+direction.toString());
+        
         SipMessage sipMessage = null;
         try {
             sipMessage = transportManager.sipParser.parse(

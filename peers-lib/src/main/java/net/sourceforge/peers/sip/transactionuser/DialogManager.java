@@ -22,7 +22,7 @@ package net.sourceforge.peers.sip.transactionuser;
 import java.util.Collection;
 import java.util.Hashtable;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.sip.RFC3261;
 import net.sourceforge.peers.sip.syntaxencoding.SipHeaderFieldName;
 import net.sourceforge.peers.sip.syntaxencoding.SipHeaderFieldValue;

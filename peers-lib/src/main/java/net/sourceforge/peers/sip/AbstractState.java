@@ -19,7 +19,7 @@
 
 package net.sourceforge.peers.sip;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 public abstract class AbstractState {
     

@@ -23,7 +23,7 @@ import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.concurrent.CountDownLatch;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 public class PcmuEncoder extends Encoder {
 

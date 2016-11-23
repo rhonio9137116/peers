@@ -19,7 +19,7 @@
 
 package net.sourceforge.peers.rtp;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 
 // RFC 3550
 public class RtpParser {

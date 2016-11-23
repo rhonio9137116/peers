@@ -19,7 +19,7 @@
 
 package net.sourceforge.peers;
 
-public interface Logger {
+public interface Logger extends org.slf4j.Logger{
 
     public void debug(String message);
     public void info(String message);

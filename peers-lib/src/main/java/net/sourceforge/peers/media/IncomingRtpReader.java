@@ -21,7 +21,7 @@ package net.sourceforge.peers.media;
 
 import java.io.IOException;
 
-import net.sourceforge.peers.Logger;
+import org.slf4j.Logger;
 import net.sourceforge.peers.rtp.RFC3551;
 import net.sourceforge.peers.rtp.RtpListener;
 import net.sourceforge.peers.rtp.RtpPacket;
